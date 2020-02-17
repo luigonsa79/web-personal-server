@@ -6,7 +6,11 @@ const { API_VERSION, IP_SERVER, PORT_DB } = require("./config");
 mongoose.set("useFindAndModify", false);
 
 mongoose.connect(
-  `mongodb://${IP_SERVER}:${PORT_DB}/agustinnavarrogaldon`,
+  // LOCAL
+  // `mongodb://${IP_SERVER}:${PORT_DB}/agustinnavarrogaldon`,
+  
+  // REMOTO
+  `mongodb+srv://react-01:Lu1s@2015@webpersonalcurso-fzwwc.mongodb.net/test?retryWrites=true&w=majority`,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err, res) => {
     if (err) {
