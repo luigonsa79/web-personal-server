@@ -7,10 +7,10 @@ mongoose.set("useFindAndModify", false);
 
 mongoose.connect(
   // LOCAL
-  `mongodb://${IP_SERVER}:${PORT_DB}/agustinnavarrogaldon`,
+  // `mongodb://${IP_SERVER}:${PORT_DB}/agustinnavarrogaldon`,
   
   // REMOTO
-  // `mongodb+srv://react-01:Lu1s@2015@webpersonalcurso-fzwwc.mongodb.net/test?retryWrites=true&w=majority`,
+  `mongodb+srv://react-01:Lu1s@2015@webpersonalcurso-fzwwc.mongodb.net/test?retryWrites=true&w=majority`,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err, res) => {
     if (err) {
